@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Assets/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css">
+</head>
+<body>
+    <style>
+        #button2{
+            display: none;
+        }
+        body{
+            background-color: #eeeeee;
+        }
+    </style>
+
+    <section>
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col col-lg-9 col-xl-7">
+                    <div class="rounded-3 card">
+                        <div class="card-body p-4">
+                            <h1 class="text-primary text-center">To do app</h1>
+                            <br>
+                            <form class="row " action="">
+                                <div>
+                                    <label for="">Enter a task here</label>
+                                    <input id="userTitle" class="form-control mt-2" type="text" placeholder="Enter your title here">
+                                    <textarea class="form-control mt-3" placeholder="Enter your description here" name="" id="userDescription"></textarea>
+                                </div>
+                                <div>
+                                    <button id="button1" type="button" onclick="addTodo()" class="btn btn-outline-success w-100 mt-4">Save</button>
+                                    <button id="button2" type="button" onclick="updateTodo()" class="btn btn-outline-primary w-100 mt-4">Update</button>
+                                </div>            
+                            </form>
+                            <!-- <div> -->
+                                <table id="tableTodo" class="table table-striped my-4">
+                                    <thead>
+                                        <tr>
+                                            <th>S/N</th>
+                                            <th>Title</th>
+                                            <th>Description</th>
+                                            <th>Date</th>
+                                            <th>Time</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="mx-auto my-auto" id="displayTodo">
+                                        <!-- <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <button onclick="deleteUser()" class="btn btn-danger">delete</button>
+                                                <button onclick="editUser()" class="btn btn-primary">edit</button>
+                                            </td>
+                                        </tr> -->
+                                    </tbody>
+                                    
+                                </table>
+                            <!-- </div> -->
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./todo.js"></script>
+</body>
+</html>
