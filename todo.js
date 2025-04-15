@@ -73,7 +73,8 @@ function displayTodo(){
     }
 
     function updateTodo(){
-
+        document.getElementById("button2").style.display = "none"
+        document.getElementById("button1").style.display = "block"
 
         arrayTodo[updateIndex].title = document.getElementById("userTitle").value;
         arrayTodo[updateIndex].description = document.getElementById("userDescription").value;
